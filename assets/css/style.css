@@ -1,0 +1,39 @@
+* {
+  box-shadow: border-box;
+}
+
+.tabuleiro {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 35px;
+  margin-right: auto;
+  margin-bottom: 1em;
+  margin-left: auto;
+  border: 1px solid #c9c9c9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tabuleiro .poke-card {
+  width: 100px;
+  height: 100px;
+  background-position: center center;
+  background-size: cover;
+  background-color: #e9e9e9;
+  cursor: pointer;
+  margin: .5em;
+}
+
+.botao {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-image: url(../../fundo.png);
+}
