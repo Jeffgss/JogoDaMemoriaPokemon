@@ -6,12 +6,14 @@ var pokemonList = [];
 
 var jogador = window.prompt('Nome: ');
 
+// Pegar as cartas do link na baseUrl
 function createList () {
     for (var index = 1; index <= 10; index++) {
         pokemonList.push(`${baseUrl}${index}.png`);
     }
-}
+} 
 
+// Checa se está correta a seleçoes das cartas
 function checkIsRight(pokemon) {
     console.log(pokemonsSelecteds);
     if (pokemonsSelecteds.length === 0) {
@@ -23,7 +25,7 @@ function checkIsRight(pokemon) {
     setTimeout(() => {
         if (pokemon1.src !== pokemon2.src) {
             // desvirar cartas
-            //alert('pokemon errado');
+            // alert('pokemon errado');
             unshowCard(pokemon1);
             unshowCard(pokemon2);
         } else {
