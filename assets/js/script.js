@@ -4,14 +4,14 @@ var background = "https://st2.depositphotos.com/1906711/11944/v/450/depositphoto
 var pokemonsSelecteds = [];
 var pokemonList = [];
 
-var jogador = window.prompt('Nome: ');
-
+// Pegar as cartas do link na baseUrl
 function createList () {
     for (var index = 1; index <= 10; index++) {
         pokemonList.push(`${baseUrl}${index}.png`);
     }
-}
+} 
 
+// Checa se está correta a seleçoes das cartas
 function checkIsRight(pokemon) {
     console.log(pokemonsSelecteds);
     if (pokemonsSelecteds.length === 0) {
@@ -22,12 +22,8 @@ function checkIsRight(pokemon) {
     var pokemon2 = pokemon;
     setTimeout(() => {
         if (pokemon1.src !== pokemon2.src) {
-            // desvirar cartas
-            //alert('pokemon errado');
             unshowCard(pokemon1);
             unshowCard(pokemon2);
-        } else {
-            //alert('pokemon certo');
         }
         pokemonsSelecteds = [];
     }, 500);
