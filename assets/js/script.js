@@ -24,12 +24,8 @@ function checkIsRight(pokemon) {
     var pokemon2 = pokemon;
     setTimeout(() => {
         if (pokemon1.src !== pokemon2.src) {
-            // desvirar cartas
-            // alert('pokemon errado');
             unshowCard(pokemon1);
             unshowCard(pokemon2);
-        } else {
-            //alert('pokemon certo');
         }
         pokemonsSelecteds = [];
     }, 500);
