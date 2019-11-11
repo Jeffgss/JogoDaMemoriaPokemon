@@ -4,8 +4,6 @@ var background = "https://st2.depositphotos.com/1906711/11944/v/450/depositphoto
 var pokemonsSelecteds = [];
 var pokemonList = [];
 
-var jogador = window.prompt('Nome: ');
-
 function createList () {
     for (var index = 1; index <= 10; index++) {
         pokemonList.push(`${baseUrl}${index}.png`);
